@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class CALCULATOR {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter First no. :");
+		int num1=s.nextInt();
+		
+		System.out.println("Enter Second no. :");
+		int num2=s.nextInt();
+		
+		System.out.println("Select symbol (+,-,/,*)");
+		String sym=s.next();
+		int res;
+		
+		switch(sym) {
+		case "+": res=num1 + num2;
+		System.out.println("Addition is :" + res);
+		break;
+		
+		case "-": res=num1 - num2;
+		System.out.println("Subtraction is :" + res);
+		break;
+		
+		case "/": res=num1 / num2;
+		System.out.println("division is :" + res);
+		break;
+		
+		case "*": res=num1 * num2;
+		System.out.println("Multiplication is :" + 
+		res);
+		break;
+		
+		default :System.out.println("Invalid Symbol");
+		break;
+				
+		}
+		
+
+	}
+
+}
